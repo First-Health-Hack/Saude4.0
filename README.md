@@ -31,6 +31,4 @@ A IA responde:
 
 
 * essa solução pode ajudar a diminuir as filas e fazer os pacientes entenderem melhor os sintomas
-
-**Test**
  
