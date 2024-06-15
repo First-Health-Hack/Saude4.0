@@ -1,3 +1,16 @@
+*Atualizações:
+
+Então organizando mais ou menos o passa-a-passo de como o app vai funcionar:
+
+1. O paciente abre o zap ou app
+2. A IA que já sabe tudo da vida dele e mais um pouco e pergunta qual o problema
+3. Ele responde na inocencia da ia não saber rsrs
+4. A IA dá algumas recomendações de médicos-especialistas do lugar a ser atendido e/ou a opção de "tele-atendimento"
+5. o paciente escolhe a opção que achar melhor
+6. O atendimento pode proseguir para realização de exames e/ou adminstração de medicação.
+
+
+
 Nosso projeto pode ser uma aplicativo, ou um tipo de api do Whasappt conectada à inteligência artificial do gpt ou outra qualquer, pra que um paciente antes de ir ao médico, emergência possa falar com o número do whatsapp ou aplicativo com o agende de IA dizer os sintomas, e o agente IA informar com base nas informações algumas recomendações do tipo:
 
 A pessoa acessa o app e diz:
