@@ -1,4 +1,4 @@
-*Atualizações:
+*+Atualizações:
 
 Então organizando mais ou menos o passa-a-passo de como o app vai funcionar:
 
@@ -8,6 +8,30 @@ Então organizando mais ou menos o passa-a-passo de como o app vai funcionar:
 4. A IA dá algumas recomendações de médicos-especialistas do lugar a ser atendido e/ou a opção de "tele-atendimento"
 5. o paciente escolhe a opção que achar melhor
 6. O atendimento pode proseguir para realização de exames e/ou adminstração de medicação.
+
+
+Conversa do zap com o bot, perguntando se ele já é cadastrado no sistema: 
+1. Se não: a pessoa tem a opção de se cadastrar com ele ou clicando no botão (cadastre-se)
+2. se sim informe usuário e senha.
+3. Após logado o bot fala: olá Fulano, tudo bem? Como posso te ajudar hoje?
+4. O Fulano diz: "estou com dor de barriga"
+5. o Bot responde: Você gostaria de marcar uma consulta ou verificar a disponibilidade do médico agora na fila de emergência? 
+6. O Fulano responde: Agora.
+7. Deseja fazer um tele-atendimento com um médico ou presencial?
+8. O Fulas responde:  Presencial
+9. Deseja passar pelo token de auto-exame?
+10. O Fulas: não tá doendo muito acho q vou morrer.
+11. O Bot: ok pode vir o médico triagem estará lhe aguardando na sala 01
+
+
+
+
+
+
+
+
+
+
 
 
 
