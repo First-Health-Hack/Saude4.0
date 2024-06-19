@@ -1,70 +1,44 @@
-*+Atualizações:
+o nosso projeto se divide em 2 seguimentos o bot e o hardware físico ambos ultlizado a api médico one(api própria que desenvolvemos) que faz todas as operações descritas a baixo em relação a processamento 
 
-Então organizando mais ou menos o passa-a-passo de como o app vai funcionar:
+passo a passo 
 
-1. O paciente abre o zap ou app
-2. A IA que já sabe tudo da vida dele e mais um pouco e pergunta qual o problema
-3. Ele responde na inocencia da ia não saber rsrs
-4. A IA dá algumas recomendações de médicos-especialistas do lugar a ser atendido e/ou a opção de "tele-atendimento"
-5. o paciente escolhe a opção que achar melhor
-6. O atendimento pode proseguir para realização de exames e/ou adminstração de medicação.
+1. O paciente abre o chat (podendo ser próprio ou de terceiros)
 
+2. uma requisição é iniciada aonde o usr informa dados pessoais para o cadastro ou acessa o cadastro de terceiros (SUS, convênios, etc)
 
-Conversa do zap com o bot, perguntando se ele já é cadastrado no sistema: 
-1. Se não: a pessoa tem a opção de se cadastrar com ele ou clicando no botão (cadastre-se)
-2. se sim informe usuário e senha.
-3. Após logado o bot fala: olá Fulano, tudo bem? Como posso te ajudar hoje?
-4. O Fulano diz: "estou com dor de barriga"
-5. o Bot responde: Você gostaria de marcar uma consulta ou verificar a disponibilidade do médico agora na fila de emergência? 
-6. O Fulano responde: Agora.
-7. Deseja fazer um tele-atendimento com um médico ou presencial?
-8. O Fulas responde:  Presencial
-9. Deseja passar pelo token de auto-exame?
-10. O Fulas: não tá doendo muito acho q vou morrer.
-11. O Bot: ok pode vir o médico triagem estará lhe aguardando na sala 01
+3 o bot faz como primeira pergunta se o caso é urgente caso seja o bot faz um loop de perguntas reduzidas e indica o hospital mais próximo 
 
+4. o bot faz um loop de perguntas para coletar informações de relevância médica
 
+5. dentro do loop o bot pergunta se o usr sabe suas informações vitais como temperarura pressão etc caso o usr não saiba ele pode responder "não sei" ou "pular todas as perguntas"
 
+6. dentro do loop é perguntado se possui médico se interesse casa não aja o bot chama a api do gpt ou de terceiros(IA) concatena as informações coletadas e passa um prompit para sugerir um médico. é mostrado ao usr que é apenas uma recomendação a qual nao responsabilisa o bot por eventuais erros 
 
+7. o bot pergunta se o usr quer marcar uma consulta caso a resposta seja positiva o bot marca a consulta e informa o usr do dia e local ou caso seja no mesmo dia o lugar só usr na fila 
 
-
-
-
-
-
-
-
-
-Nosso projeto pode ser uma aplicativo, ou um tipo de api do Whasappt conectada à inteligência artificial do gpt ou outra qualquer, pra que um paciente antes de ir ao médico, emergência possa falar com o número do whatsapp ou aplicativo com o agende de IA dizer os sintomas, e o agente IA informar com base nas informações algumas recomendações do tipo:
-
-A pessoa acessa o app e diz:
-
-- oi estou passando mal
-
-O agente responde (pelo app ou zap):
-
-- Olá eu sou um agente IA, me diga quais os seus sintomas, para que eu possamos registrar no sistema essas informações.
-
-A pessoa responde:
-- dor de cabeça, etc..
-
-A ia responde:
-- de acordo com as informações forncidas estes sintomas podem ser muitas coisas (pra variar né? kkk), etc...
-A IA pode dar algumas recomendações se não for nada sério: 
-- algumas recomendações que podem ajudar a aliviar os sintomas (aviso: ias não devem ser seguidas para aconselhamento médicos)
-- Você ainda quer consultar um médico?
-
-A pessoa responde:
-Sim (ou não)
-
-A IA pergunta:
-- qual a estimativa da sua chegada até o hospital?
-
-A pessoa responde:
-- 30 mins
-
-A IA responde:
-- seu lugar na fila é 999... no consultório x, aguarde na recepção estimativa de espera de 10 mins.
 
 
 * essa solução pode ajudar a diminuir as filas e fazer os pacientes entenderem melhor os sintomas
+
+o hardware físico 
+
+inspirado nós totens de autoatendimento de festfood que entregam velocidade e qualidade tem se a segunda via do projeto 
+
+
+1. quando o usr chega no hospital já direcionando para um totem que podem ser colocado um do lado do outro 
+
+2. o usr inicia uma requisição aonde o totem mostra uma tela perguntado se o caso seria urgente caso seja o totem despara o aviso de urgência do hospital e caso o hospital não tenha uma enfermeira é chama 
+
+3. caso não seja urgente o totem segui com o mesmo loop de perguntas do bot 
+
+4. o diferencial principal do totem com o bot é que o totem possui equipamentos para fazer as medições de sinais vitais fazendo o processo de pre triagem automatizado permitindo com que o trabalho de vários enfermeiros seja feito ali no totem poupando tem e otimizando processos 
+
+5. o usr pega os equipamentos que possui giroscópios nas pontas permitindo com q o totem saiba caso o usr pegou o equipamento errado 
+
+6. cada equipamento possui um vídeo testo e animação de como deve ser usado de maneira correta 
+
+
+7. ao final o totem envia as informações para o server do hospital ou para o médico por email chat etc 
+
+8 por fim o totem mostra a opção de imprimir todas as informações coletadas ou gerar um Qr para um pdf que possa ser levado para o médico 
+
